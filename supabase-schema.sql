@@ -5,6 +5,8 @@ create table if not exists public.assessment_submissions (
   submission_id text not null unique,
   submitted_at timestamptz not null default now(),
   created_at timestamptz not null default now(),
+  full_name text,
+  gmail text,
   holland_code text,
   report_source text,
   headline text,
@@ -29,6 +31,8 @@ create table if not exists public.assessment_response_items (
   id uuid primary key default gen_random_uuid(),
   submission_id text not null references public.assessment_submissions(submission_id) on delete cascade,
   submitted_at timestamptz not null default now(),
+  full_name text,
+  gmail text,
   question_id text not null,
   section_id text,
   section_label text,
@@ -39,8 +43,14 @@ create table if not exists public.assessment_response_items (
 );
 
 alter table public.assessment_response_items
+  add column if not exists full_name text,
+  add column if not exists gmail text,
   add column if not exists section_label text,
   add column if not exists question_order integer;
+
+alter table public.assessment_submissions
+  add column if not exists full_name text,
+  add column if not exists gmail text;
 
 alter table public.assessment_submissions enable row level security;
 alter table public.assessment_response_items enable row level security;
@@ -67,6 +77,8 @@ create or replace view public.assessment_responses_readable as
 select
   s.submission_id,
   s.submitted_at,
+  s.full_name,
+  s.gmail,
   s.holland_code,
   s.headline,
   s.report_source,

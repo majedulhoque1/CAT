@@ -6,7 +6,7 @@ const SECTIONS = [
     id: 'bigfive',
     label: '01',
     title: 'Personality',
-    subtitle: 'Big Five · Goldberg (1992) IPIP',
+    subtitle: 'Big Five - Goldberg (1992) IPIP',
     color: '#5856D6',
     light: '#F2F2FF',
     items: [
@@ -26,7 +26,7 @@ const SECTIONS = [
     id: 'riasec',
     label: '02',
     title: 'Career Interests',
-    subtitle: 'RIASEC Holland Code · IIP Markers',
+    subtitle: 'RIASEC Holland Code - IIP Markers',
     color: '#34C759',
     light: '#F0FFF4',
     items: [
@@ -64,7 +64,7 @@ const SECTIONS = [
     id: 'motivation',
     label: '04',
     title: 'Motivation',
-    subtitle: "SDT & McClelland's Need Theory",
+    subtitle: "SDT and McClelland's Need Theory",
     color: '#FF2D55',
     light: '#FFF0F4',
     items: [
@@ -82,7 +82,7 @@ const BF_LABELS = { O: 'Openness', C: 'Conscientiousness', E: 'Extraversion', A:
 const RI_LABELS = { R: 'Realistic', I: 'Investigative', A: 'Artistic', S: 'Social', E: 'Enterprising', C: 'Conventional' }
 const BF_COLORS = { O: '#5856D6', C: '#007AFF', E: '#FF2D55', A: '#34C759', ES: '#FF9500' }
 const RI_COLORS = { R: '#8E8E93', I: '#5856D6', A: '#FF2D55', S: '#34C759', E: '#FF9500', C: '#007AFF' }
-const ALL_ITEMS = SECTIONS.flatMap((section) => section.items)
+
 const RESPONSE_ITEM_META = SECTIONS.flatMap((section) =>
   section.items.map((item, index) => ({
     id: item.id,
@@ -93,12 +93,10 @@ const RESPONSE_ITEM_META = SECTIONS.flatMap((section) =>
     prompt: item.text,
   })),
 )
+
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL?.trim()
 const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim()
-const supabase =
-  SUPABASE_URL && SUPABASE_KEY
-    ? createClient(SUPABASE_URL, SUPABASE_KEY)
-    : null
+const supabase = SUPABASE_URL && SUPABASE_KEY ? createClient(SUPABASE_URL, SUPABASE_KEY) : null
 
 function average(values) {
   return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 3
@@ -245,16 +243,16 @@ Return exactly: {"headline":"3-4 word career identity label","tagline":"One evoc
   }
 }
 
-async function saveResults(responses, result) {
-  const submissionId =
-    typeof crypto !== 'undefined' && crypto.randomUUID
-      ? crypto.randomUUID()
-      : `sub-${Date.now()}`
+async function saveResults(responses, result, userInfo) {
+  const submissionId = typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : `sub-${Date.now()}`
 
   if (!supabase) {
     throw new Error('Missing Supabase configuration in .env.')
   }
 
+  const submittedAt = new Date().toISOString()
+  const fullName = userInfo.fullName.trim()
+  const gmail = userInfo.gmail.trim().toLowerCase()
   const responseItems = RESPONSE_ITEM_META.map((item) => ({
     id: item.id,
     sectionId: item.sectionId,
@@ -267,7 +265,9 @@ async function saveResults(responses, result) {
 
   const { error } = await supabase.from('assessment_submissions').insert({
     submission_id: submissionId,
-    submitted_at: new Date().toISOString(),
+    submitted_at: submittedAt,
+    full_name: fullName,
+    gmail,
     holland_code: result.top3R,
     report_source: result.source,
     headline: result.parsed.headline,
@@ -288,13 +288,13 @@ async function saveResults(responses, result) {
     response_items: responseItems,
   })
 
-  if (error) {
-    throw new Error(error.message)
-  }
+  if (error) throw new Error(error.message)
 
   const itemRows = responseItems.map((item) => ({
     submission_id: submissionId,
-    submitted_at: new Date().toISOString(),
+    submitted_at: submittedAt,
+    full_name: fullName,
+    gmail,
     question_id: item.id,
     section_id: item.sectionId,
     section_label: item.sectionLabel,
@@ -305,15 +305,9 @@ async function saveResults(responses, result) {
   }))
 
   const { error: itemError } = await supabase.from('assessment_response_items').insert(itemRows)
+  if (itemError) throw new Error(itemError.message)
 
-  if (itemError) {
-    throw new Error(itemError.message)
-  }
-
-  return {
-    id: submissionId,
-    ok: true,
-  }
+  return { id: submissionId, ok: true }
 }
 
 const CSS = `
@@ -330,7 +324,7 @@ const CSS = `
 .caption{font-size:13px;color:#8E8E93;line-height:1.5}
 .row{display:flex;align-items:center;gap:13px;padding:12px 0;border-bottom:1px solid #F2F2F7}
 .row:last-child{border-bottom:none;padding-bottom:0}
-.icon-box{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.icon-box{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
 .prog-track,.sb-track{background:#E5E5EA;border-radius:3px;overflow:hidden}
 .prog-track{height:4px}.sb-track{height:5px;margin-top:5px}.prog-fill,.sb-fill{height:100%}
 .lbtn{flex:1;height:46px;border-radius:13px;border:1.5px solid #E5E5EA;background:#F9F9FB;font-size:15px;font-weight:500;cursor:pointer;transition:all .16s;color:#3A3A3C;font-family:inherit}
@@ -339,6 +333,9 @@ const CSS = `
 .btn-cta:disabled{background:#E5E5EA!important;color:#C7C7CC!important;cursor:not-allowed}
 .nav-dots{display:flex;gap:6px;justify-content:center;margin-bottom:26px}.nd{height:6px;border-radius:3px;background:#E5E5EA}.nd.active{width:22px}.nd.inactive{width:6px}.nd.done{background:#34C759}
 .num-badge{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0}
+.field{display:grid;gap:6px}
+.field-input{height:48px;border-radius:14px;border:1.5px solid #D1D1D6;padding:0 14px;font-size:15px;font-family:inherit;color:#1C1C1E;outline:none;background:#fff}
+.field-input:focus{border-color:#007AFF;box-shadow:0 0 0 3px rgba(0,122,255,.12)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}} .fu{animation:fadeUp .45s both}
 @keyframes spin{to{transform:rotate(360deg)}} .spinner{width:42px;height:42px;border-radius:50%;border:3px solid #E5E5EA;border-top-color:#007AFF;animation:spin .85s linear infinite}
 `
@@ -346,68 +343,164 @@ const CSS = `
 function ScoreBar({ label, score, color }) {
   const [width, setWidth] = useState(0)
   const percentage = pct(score)
+
   useEffect(() => {
     const timer = setTimeout(() => setWidth(percentage), 120)
     return () => clearTimeout(timer)
   }, [percentage])
+
   return (
     <div style={{ marginBottom: 15 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{ fontSize: 14, fontWeight: 500, color: '#3A3A3C' }}>{label}</span>
         <span style={{ fontSize: 14, fontWeight: 700, color }}>{percentage}%</span>
       </div>
-      <div className="sb-track"><div className="sb-fill" style={{ width: `${width}%`, background: `linear-gradient(90deg,${color}66,${color})` }} /></div>
+      <div className="sb-track">
+        <div className="sb-fill" style={{ width: `${width}%`, background: `linear-gradient(90deg,${color}66,${color})` }} />
+      </div>
     </div>
   )
 }
 
-function Welcome({ onStart }) {
+function Welcome({ onStart, userInfo, onUserInfoChange, canStart }) {
   const rows = [
-    { icon: '🧠', label: 'Big Five Personality', sub: 'Goldberg (1992) IPIP', bg: '#F2F2FF' },
-    { icon: '🧭', label: 'RIASEC Career Interests', sub: 'Holland · Rounds et al.', bg: '#F0FFF4' },
-    { icon: '⚖️', label: 'O*Net Work Values', sub: 'Six-domain framework', bg: '#FFFBF0' },
-    { icon: '🔥', label: 'Motivation Drivers', sub: 'SDT & McClelland', bg: '#FFF0F4' },
+    { icon: 'BF', label: 'Big Five Personality', sub: 'Goldberg (1992) IPIP', bg: '#F2F2FF' },
+    { icon: 'RI', label: 'RIASEC Career Interests', sub: 'Holland and Rounds et al.', bg: '#F0FFF4' },
+    { icon: 'WV', label: 'O*Net Work Values', sub: 'Six-domain framework', bg: '#FFFBF0' },
+    { icon: 'MD', label: 'Motivation Drivers', sub: 'SDT and McClelland', bg: '#FFF0F4' },
   ]
+
   return (
     <div className="fu">
       <p className="eyebrow" style={{ marginBottom: 12 }}>Career Identity Profile Battery</p>
-      <h1 className="hero-title" style={{ marginBottom: 12 }}>Understand your<br /><span style={{ color: '#007AFF' }}>career self.</span></h1>
-      <p className="body" style={{ color: '#6D6D72', marginBottom: 22, maxWidth: 440 }}>A multi-construct psychometric instrument spanning personality, career interests, work values, and motivation - with an AI-generated personalised report.</p>
-      <div style={{ display: 'flex', gap: 8, marginBottom: 24 }}>{['34 items', '~8 min', 'AI report'].map((t) => <span key={t} style={{ background: '#fff', borderRadius: 20, padding: '5px 14px', fontSize: 13, fontWeight: 500, color: '#6D6D72', boxShadow: '0 1px 3px rgba(0,0,0,0.07)' }}>{t}</span>)}</div>
-      <div className="card" style={{ padding: 0, overflow: 'hidden' }}>{rows.map((r, i) => <div key={r.label} className="row" style={{ padding: '13px 18px', borderBottom: i < 3 ? '1px solid #F2F2F7' : 'none' }}><div className="icon-box" style={{ background: r.bg }}>{r.icon}</div><div style={{ flex: 1 }}><div style={{ fontSize: 15, fontWeight: 600 }}>{r.label}</div><div className="caption">{r.sub}</div></div></div>)}</div>
-      <div className="card" style={{ background: '#F0F7FF' }}><p className="caption" style={{ color: '#007AFF' }}>The frontend mirrors your pasted flow and sends report-generation requests to `VITE_GOOGLE_SCRIPT_URL`, with a local fallback if Apps Script returns invalid JSON.</p></div>
-      <button className="btn-cta" onClick={onStart} style={{ background: 'linear-gradient(135deg,#007AFF,#5856D6)', color: '#fff', boxShadow: '0 6px 22px rgba(0,122,255,.28)' }}>Start Assessment <span style={{ fontSize: 18 }}>→</span></button>
+      <h1 className="hero-title" style={{ marginBottom: 12 }}>
+        Understand your
+        <br />
+        <span style={{ color: '#007AFF' }}>career self.</span>
+      </h1>
+      <p className="body" style={{ color: '#6D6D72', marginBottom: 22, maxWidth: 440 }}>
+        A multi-construct psychometric instrument spanning personality, career interests, work values, and motivation with an AI-generated personalised report.
+      </p>
+      <div style={{ display: 'flex', gap: 8, marginBottom: 24 }}>
+        {['34 items', '~8 min', 'AI report'].map((text) => (
+          <span key={text} style={{ background: '#fff', borderRadius: 20, padding: '5px 14px', fontSize: 13, fontWeight: 500, color: '#6D6D72', boxShadow: '0 1px 3px rgba(0,0,0,0.07)' }}>
+            {text}
+          </span>
+        ))}
+      </div>
+
+      <div className="card">
+        <p className="eyebrow" style={{ color: '#007AFF', marginBottom: 12 }}>Participant Details</p>
+        <div style={{ display: 'grid', gap: 12 }}>
+          <label className="field">
+            <span style={{ fontSize: 13, fontWeight: 600, color: '#3A3A3C' }}>Full Name</span>
+            <input className="field-input" type="text" value={userInfo.fullName} onChange={(event) => onUserInfoChange('fullName', event.target.value)} placeholder="Enter your full name" autoComplete="name" />
+          </label>
+          <label className="field">
+            <span style={{ fontSize: 13, fontWeight: 600, color: '#3A3A3C' }}>Gmail</span>
+            <input className="field-input" type="email" value={userInfo.gmail} onChange={(event) => onUserInfoChange('gmail', event.target.value)} placeholder="yourname@gmail.com" autoComplete="email" inputMode="email" />
+          </label>
+        </div>
+        <p className="caption" style={{ marginTop: 10 }}>Your full name and Gmail will be saved with this assessment submission in Supabase.</p>
+      </div>
+
+      <div className="card" style={{ padding: 0, overflow: 'hidden' }}>
+        {rows.map((row, index) => (
+          <div key={row.label} className="row" style={{ padding: '13px 18px', borderBottom: index < rows.length - 1 ? '1px solid #F2F2F7' : 'none' }}>
+            <div className="icon-box" style={{ background: row.bg, color: '#6D6D72' }}>{row.icon}</div>
+            <div style={{ flex: 1 }}>
+              <div style={{ fontSize: 15, fontWeight: 600 }}>{row.label}</div>
+              <div className="caption">{row.sub}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="card" style={{ background: '#F0F7FF' }}>
+        <p className="caption" style={{ color: '#007AFF' }}>
+          The assessment uses Apps Script for report generation and Supabase for saving identity plus every response.
+        </p>
+      </div>
+
+      <button className="btn-cta" disabled={!canStart} onClick={onStart} style={canStart ? { background: 'linear-gradient(135deg,#007AFF,#5856D6)', color: '#fff', boxShadow: '0 6px 22px rgba(0,122,255,.28)' } : undefined}>
+        Start Assessment <span style={{ fontSize: 18 }}>→</span>
+      </button>
     </div>
   )
 }
 
 function SectionScreen({ section, secIdx, responses, onResponse, onNext, isComplete }) {
-  const answered = section.items.filter((item) => responses[item.id]).length
+  const answered = section.items.filter((item) => responses[item.id] !== undefined).length
+
   return (
     <div className="fu">
-      <div className="nav-dots">{SECTIONS.map((s, i) => <div key={s.id} className={`nd ${i === secIdx ? 'active' : 'inactive'} ${i < secIdx ? 'done' : ''}`} style={i === secIdx ? { background: section.color } : undefined} />)}</div>
+      <div className="nav-dots">
+        {SECTIONS.map((entry, index) => (
+          <div key={entry.id} className={`nd ${index === secIdx ? 'active' : 'inactive'} ${index < secIdx ? 'done' : ''}`} style={index === secIdx ? { background: section.color } : undefined} />
+        ))}
+      </div>
+
       <div className="card">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 14 }}>
-          <div><p className="eyebrow" style={{ color: section.color, marginBottom: 6 }}>Section {section.label} of 04</p><h2 className="sec-title">{section.title}</h2><p className="caption" style={{ marginTop: 3 }}>{section.subtitle}</p></div>
-          <div style={{ textAlign: 'right' }}><div style={{ fontSize: 26, fontWeight: 700, color: section.color, lineHeight: 1 }}>{answered}</div><div className="caption" style={{ fontSize: 11 }}>of {section.items.length}</div></div>
+          <div>
+            <p className="eyebrow" style={{ color: section.color, marginBottom: 6 }}>Section {section.label} of 04</p>
+            <h2 className="sec-title">{section.title}</h2>
+            <p className="caption" style={{ marginTop: 3 }}>{section.subtitle}</p>
+          </div>
+          <div style={{ textAlign: 'right' }}>
+            <div style={{ fontSize: 26, fontWeight: 700, color: section.color, lineHeight: 1 }}>{answered}</div>
+            <div className="caption" style={{ fontSize: 11 }}>of {section.items.length}</div>
+          </div>
         </div>
-        <div className="prog-track"><div className="prog-fill" style={{ width: `${(answered / section.items.length) * 100}%`, background: section.color }} /></div>
+        <div className="prog-track">
+          <div className="prog-fill" style={{ width: `${(answered / section.items.length) * 100}%`, background: section.color }} />
+        </div>
       </div>
-      {section.items.map((item, idx) => {
+
+      {section.items.map((item, index) => {
         const value = responses[item.id]
-        return <div key={item.id} className="card"><div style={{ display: 'flex', gap: 11, alignItems: 'flex-start', marginBottom: 14 }}><div className="num-badge" style={{ background: value ? section.color : '#F2F2F7', color: value ? '#fff' : '#8E8E93' }}>{String(idx + 1).padStart(2, '0')}</div><p className="body" style={{ flex: 1, fontSize: 15, paddingTop: 3 }}>{item.text}</p></div><div style={{ display: 'flex', gap: 7 }}>{[1, 2, 3, 4, 5].map((v) => <button key={v} className={`lbtn${value === v ? ' sel' : ''}`} style={value === v ? { background: section.color } : undefined} onClick={() => onResponse(item.id, v)}>{v}</button>)}</div><div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 5 }}><span className="caption" style={{ fontSize: 11 }}>Not at all</span><span className="caption" style={{ fontSize: 11 }}>Very much</span></div></div>
+        return (
+          <div key={item.id} className="card">
+            <div style={{ display: 'flex', gap: 11, alignItems: 'flex-start', marginBottom: 14 }}>
+              <div className="num-badge" style={{ background: value ? section.color : '#F2F2F7', color: value ? '#fff' : '#8E8E93' }}>{String(index + 1).padStart(2, '0')}</div>
+              <p className="body" style={{ flex: 1, fontSize: 15, paddingTop: 3 }}>{item.text}</p>
+            </div>
+            <div style={{ display: 'flex', gap: 7 }}>
+              {[1, 2, 3, 4, 5].map((option) => (
+                <button key={option} className={`lbtn${value === option ? ' sel' : ''}`} style={value === option ? { background: section.color } : undefined} onClick={() => onResponse(item.id, option)}>
+                  {option}
+                </button>
+              ))}
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 5 }}>
+              <span className="caption" style={{ fontSize: 11 }}>Not at all</span>
+              <span className="caption" style={{ fontSize: 11 }}>Very much</span>
+            </div>
+          </div>
+        )
       })}
-      <div style={{ marginTop: 6 }}>{!isComplete && <p className="caption" style={{ textAlign: 'center', marginBottom: 10, color: '#C7C7CC' }}>Answer all {section.items.length} items to continue</p>}<button className="btn-cta" onClick={onNext} disabled={!isComplete} style={isComplete ? { background: `linear-gradient(135deg,${section.color},${section.color}CC)`, color: '#fff', boxShadow: `0 6px 20px ${section.color}33` } : undefined}>{secIdx < SECTIONS.length - 1 ? 'Next Section →' : 'Generate My Report →'}</button></div>
+
+      <div style={{ marginTop: 6 }}>
+        {!isComplete && <p className="caption" style={{ textAlign: 'center', marginBottom: 10, color: '#C7C7CC' }}>Answer all {section.items.length} items to continue</p>}
+        <button className="btn-cta" onClick={onNext} disabled={!isComplete} style={isComplete ? { background: `linear-gradient(135deg,${section.color},${section.color}CC)`, color: '#fff', boxShadow: `0 6px 20px ${section.color}33` } : undefined}>
+          {secIdx < SECTIONS.length - 1 ? 'Next Section →' : 'Generate My Report →'}
+        </button>
+      </div>
     </div>
   )
 }
 
 function Loading({ msg }) {
-  return <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '65vh', gap: 18 }}><div className="spinner" /><p className="body" style={{ color: '#007AFF', fontWeight: 500 }}>{msg}</p></div>
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '65vh', gap: 18 }}>
+      <div className="spinner" />
+      <p className="body" style={{ color: '#007AFF', fontWeight: 500 }}>{msg}</p>
+    </div>
+  )
 }
 
 function ReportScreen({ data }) {
-  const { parsed, bf, ri, top3R, topVals, topMot, source, scriptError } = data
+  const { parsed, bf, ri, top3R, topVals, topMot, source, scriptError, saveResult } = data
   const [copied, setCopied] = useState(false)
   const [downloaded, setDownloaded] = useState(false)
 
@@ -459,10 +552,14 @@ function ReportScreen({ data }) {
         <p style={{ fontSize: 11, fontWeight: 600, letterSpacing: '.08em', textTransform: 'uppercase', opacity: 0.65, marginBottom: 10 }}>Career Identity Report</p>
         <h1 style={{ fontSize: 28, fontWeight: 700, lineHeight: 1.2, marginBottom: 10 }}>{parsed.headline}</h1>
         <p style={{ fontSize: 14.5, lineHeight: 1.65, opacity: 0.82, fontWeight: 300, fontStyle: 'italic', marginBottom: 16 }}>{parsed.tagline}</p>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.18)', borderRadius: 20, padding: '6px 14px' }}><span style={{ fontSize: 10, fontWeight: 700, opacity: 0.8 }}>HOLLAND CODE</span><span style={{ fontSize: 17, fontWeight: 800, letterSpacing: 4 }}>{top3R}</span></div>
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(255,255,255,0.18)', borderRadius: 20, padding: '6px 14px' }}>
+          <span style={{ fontSize: 10, fontWeight: 700, opacity: 0.8 }}>HOLLAND CODE</span>
+          <span style={{ fontSize: 17, fontWeight: 800, letterSpacing: 4 }}>{top3R}</span>
+        </div>
       </div>
 
       {source === 'fallback' && <div className="card" style={{ background: '#FFFBEA' }}><p className="caption" style={{ color: '#B26A00' }}>Apps Script did not return valid report JSON, so a local fallback report is being shown instead. {scriptError}</p></div>}
+      {saveResult?.ok === false && <div className="card" style={{ background: '#FFF0F4' }}><p className="caption" style={{ color: '#B00020' }}>Supabase save failed: {saveResult.error}</p></div>}
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 12 }}>
         <button onClick={handleDownload} style={{ height: 48, borderRadius: 14, border: '1.5px solid #E5E5EA', background: '#fff', fontSize: 14, fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit' }}>{downloaded ? 'Downloaded!' : 'Download Report'}</button>
@@ -470,26 +567,69 @@ function ReportScreen({ data }) {
       </div>
 
       <div className="card">
-        <p className="eyebrow" style={{ color: '#5856D6', marginBottom: 14 }}>01 — Big Five Personality</p>
-        {Object.entries(bf).map(([k, v]) => <ScoreBar key={k} label={BF_LABELS[k]} score={v} color={BF_COLORS[k]} />)}
+        <p className="eyebrow" style={{ color: '#5856D6', marginBottom: 14 }}>01 - Big Five Personality</p>
+        {Object.entries(bf).map(([key, value]) => <ScoreBar key={key} label={BF_LABELS[key]} score={value} color={BF_COLORS[key]} />)}
         <div className="card-flat"><p className="body" style={{ fontSize: 14 }}>{parsed.personalitySummary}</p></div>
       </div>
 
       <div className="card">
-        <p className="eyebrow" style={{ color: '#34C759', marginBottom: 14 }}>02 — RIASEC Career Interests</p>
-        {Object.entries(ri).map(([k, v]) => <ScoreBar key={k} label={RI_LABELS[k]} score={v} color={RI_COLORS[k]} />)}
+        <p className="eyebrow" style={{ color: '#34C759', marginBottom: 14 }}>02 - RIASEC Career Interests</p>
+        {Object.entries(ri).map(([key, value]) => <ScoreBar key={key} label={RI_LABELS[key]} score={value} color={RI_COLORS[key]} />)}
         <div className="card-flat"><p className="body" style={{ fontSize: 14 }}>{parsed.careerInterestSummary}</p></div>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-        <div className="card"><p className="eyebrow" style={{ color: '#FF9500', marginBottom: 10 }}>Work Values</p>{topVals.map((value, i) => <div key={value} className="row" style={{ paddingTop: 8, paddingBottom: 8 }}><span style={{ fontSize: 11, fontWeight: 700, color: '#FF9500' }}>#{i + 1}</span><span style={{ fontSize: 13, fontWeight: 500 }}>{value}</span></div>)}<p style={{ fontSize: 12, color: '#6D6D72', lineHeight: 1.6, marginTop: 8 }}>{parsed.valuesSummary}</p></div>
-        <div className="card"><p className="eyebrow" style={{ color: '#FF2D55', marginBottom: 10 }}>Motivation</p>{topMot.map((value, i) => <div key={value} className="row" style={{ paddingTop: 8, paddingBottom: 8 }}><span style={{ fontSize: 11, fontWeight: 700, color: '#FF2D55' }}>#{i + 1}</span><span style={{ fontSize: 13, fontWeight: 500 }}>{value}</span></div>)}<p style={{ fontSize: 12, color: '#6D6D72', lineHeight: 1.6, marginTop: 8 }}>{parsed.motivationSummary}</p></div>
+        <div className="card">
+          <p className="eyebrow" style={{ color: '#FF9500', marginBottom: 10 }}>Work Values</p>
+          {topVals.map((value, index) => (
+            <div key={value} className="row" style={{ paddingTop: 8, paddingBottom: 8 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: '#FF9500' }}>#{index + 1}</span>
+              <span style={{ fontSize: 13, fontWeight: 500 }}>{value}</span>
+            </div>
+          ))}
+          <p style={{ fontSize: 12, color: '#6D6D72', lineHeight: 1.6, marginTop: 8 }}>{parsed.valuesSummary}</p>
+        </div>
+        <div className="card">
+          <p className="eyebrow" style={{ color: '#FF2D55', marginBottom: 10 }}>Motivation</p>
+          {topMot.map((value, index) => (
+            <div key={value} className="row" style={{ paddingTop: 8, paddingBottom: 8 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: '#FF2D55' }}>#{index + 1}</span>
+              <span style={{ fontSize: 13, fontWeight: 500 }}>{value}</span>
+            </div>
+          ))}
+          <p style={{ fontSize: 12, color: '#6D6D72', lineHeight: 1.6, marginTop: 8 }}>{parsed.motivationSummary}</p>
+        </div>
       </div>
 
-      <div className="card" style={{ background: '#F0F7FF' }}><p className="eyebrow" style={{ color: '#007AFF', marginBottom: 10 }}>Integrated Career Portrait</p><p className="body">{parsed.integratedInsight}</p></div>
-      <div className="card"><p className="eyebrow" style={{ color: '#34C759', marginBottom: 14 }}>Suggested Career Directions</p>{parsed.careerMatches.map((match) => <div key={match} className="row"><div style={{ width: 8, height: 8, borderRadius: 4, background: '#34C759', flexShrink: 0 }} /><span style={{ fontSize: 15, fontWeight: 500 }}>{match}</span></div>)}</div>
-      <div className="card"><p className="eyebrow" style={{ color: '#FF9500', marginBottom: 14 }}>Key Strengths</p>{parsed.keyStrengths.map((strength, i) => <div key={strength} style={{ display: 'flex', gap: 12, marginBottom: 14 }}><div className="num-badge" style={{ background: '#FFFBF0', color: '#FF9500' }}>0{i + 1}</div><p className="body" style={{ flex: 1, fontSize: 14 }}>{strength}</p></div>)}</div>
-      <div className="card" style={{ background: '#FFF0F4' }}><p className="eyebrow" style={{ color: '#FF2D55', marginBottom: 10 }}>Growth Edge</p><p className="body" style={{ fontSize: 14 }}>{parsed.developmentNote}</p></div>
+      <div className="card" style={{ background: '#F0F7FF' }}>
+        <p className="eyebrow" style={{ color: '#007AFF', marginBottom: 10 }}>Integrated Career Portrait</p>
+        <p className="body">{parsed.integratedInsight}</p>
+      </div>
+
+      <div className="card">
+        <p className="eyebrow" style={{ color: '#34C759', marginBottom: 14 }}>Suggested Career Directions</p>
+        {parsed.careerMatches.map((match) => (
+          <div key={match} className="row">
+            <div style={{ width: 8, height: 8, borderRadius: 4, background: '#34C759', flexShrink: 0 }} />
+            <span style={{ fontSize: 15, fontWeight: 500 }}>{match}</span>
+          </div>
+        ))}
+      </div>
+
+      <div className="card">
+        <p className="eyebrow" style={{ color: '#FF9500', marginBottom: 14 }}>Key Strengths</p>
+        {parsed.keyStrengths.map((strength, index) => (
+          <div key={strength} style={{ display: 'flex', gap: 12, marginBottom: 14 }}>
+            <div className="num-badge" style={{ background: '#FFFBF0', color: '#FF9500' }}>0{index + 1}</div>
+            <p className="body" style={{ flex: 1, fontSize: 14 }}>{strength}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="card" style={{ background: '#FFF0F4' }}>
+        <p className="eyebrow" style={{ color: '#FF2D55', marginBottom: 10 }}>Growth Edge</p>
+        <p className="body" style={{ fontSize: 14 }}>{parsed.developmentNote}</p>
+      </div>
     </div>
   )
 }
@@ -498,10 +638,12 @@ export default function App() {
   const [phase, setPhase] = useState('welcome')
   const [secIdx, setSecIdx] = useState(0)
   const [responses, setResponses] = useState({})
+  const [userInfo, setUserInfo] = useState({ fullName: '', gmail: '' })
   const [report, setReport] = useState(null)
   const [loadMsg, setLoadMsg] = useState('Scoring your responses...')
   const topRef = useRef(null)
   const scriptUrl = import.meta.env.VITE_GOOGLE_SCRIPT_URL?.trim()
+  const canStart = userInfo.fullName.trim().length > 1 && /^[^\s@]+@gmail\.com$/i.test(userInfo.gmail.trim())
 
   function scrollToTop() {
     window.scrollTo(0, 0)
@@ -515,7 +657,6 @@ export default function App() {
     scrollToTop()
     const frame = requestAnimationFrame(scrollToTop)
     const timer = setTimeout(scrollToTop, 40)
-
     return () => {
       cancelAnimationFrame(frame)
       clearTimeout(timer)
@@ -523,22 +664,26 @@ export default function App() {
   }, [phase, secIdx])
 
   const onResponse = (id, value) => setResponses((prev) => ({ ...prev, [id]: value }))
+  const onUserInfoChange = (field, value) => setUserInfo((prev) => ({ ...prev, [field]: value }))
   const isSecComplete = () => SECTIONS[secIdx]?.items.every((item) => responses[item.id] !== undefined)
 
   async function handleNext() {
     scrollToTop()
+
     if (secIdx < SECTIONS.length - 1) {
       setSecIdx((current) => current + 1)
       requestAnimationFrame(scrollToTop)
       return
     }
+
     setPhase('loading')
     requestAnimationFrame(scrollToTop)
+
     const result = await generateReport(responses, setLoadMsg, scriptUrl)
     let saveResult
 
     try {
-      saveResult = await saveResults(responses, result)
+      saveResult = await saveResults(responses, result, userInfo)
     } catch (error) {
       saveResult = {
         ok: false,
@@ -556,7 +701,7 @@ export default function App() {
       <style>{CSS}</style>
       <div className="app">
         <div className="wrap" ref={topRef}>
-          {phase === 'welcome' && <Welcome onStart={() => { scrollToTop(); setPhase('section') }} />}
+          {phase === 'welcome' && <Welcome onStart={() => { scrollToTop(); setPhase('section') }} userInfo={userInfo} onUserInfoChange={onUserInfoChange} canStart={canStart} />}
           {phase === 'section' && <SectionScreen key={`${phase}-${secIdx}`} section={SECTIONS[secIdx]} secIdx={secIdx} responses={responses} onResponse={onResponse} onNext={handleNext} isComplete={isSecComplete()} />}
           {phase === 'loading' && <Loading msg={loadMsg} />}
           {phase === 'report' && report && <ReportScreen data={report} />}
