@@ -1,0 +1,21 @@
+{
+  "responses": {
+    "O1": 1, "O2": 2, "C1": 3, "C2": 4, "E1": 5, "E2": 1, "A1": 2, "A2": 3, "ES1": 4, "ES2": 5,
+    "R1": 1, "R2": 2, "I1": 3, "I2": 4, "AA1": 5, "AA2": 1, "S1": 2, "S2": 3, "EN1": 4, "EN2": 5, "CV1": 1, "CV2": 2,
+    "WV1": 3, "WV2": 4, "WV3": 5, "WV4": 1, "WV5": 2, "WV6": 3,
+    "M1": 4, "M2": 5, "M3": 1, "M4": 2, "M5": 3, "M6": 4
+  },
+  "expected": {
+    "validationOk": true,
+    "scores": {
+      "bf": { "O": 2.5, "C": 2.5, "E": 5, "A": 2.5, "ES": 2.5 },
+      "ri": { "R": 1.5, "I": 3.5, "A": 3, "S": 2.5, "E": 4.5, "C": 1.5 },
+      "wv": { "Achievement": 3, "Independence": 4, "Recognition": 5, "Relationships": 1, "Support": 2, "Working Conditions": 3 },
+      "mv": { "Mastery": 4, "Advancement": 5, "Teamwork": 1, "Purpose": 2, "Financial Reward": 3, "Adaptability": 4 },
+      "hollandCode": "EIA",
+      "topValues": ["Recognition", "Independence", "Achievement"],
+      "topMotivators": ["Advancement", "Mastery"]
+    },
+    "fallbackHeadline": "Enterprising Profile"
+  }
+}
