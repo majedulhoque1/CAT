@@ -17,4 +17,5 @@ Deno.test('assessment-core matches the golden vector (Deno runtime)', () => {
 
   const fallback = buildFallbackReport(scores)
   assertEquals(fallback.headline, fixture.expected.fallbackHeadline)
+  assertEquals(fallback.careerMatches, fixture.expected.fallbackCareerMatches)
 })

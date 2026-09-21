@@ -20,6 +20,7 @@ import {
   validateResponses,
   computeScores,
   buildFallbackReport,
+  deriveCareerMatches,
   pct,
 } from '../_shared/assessment-core.js'
 
@@ -290,6 +291,10 @@ async function verifyTurnstile(token: string | undefined, ip: string): Promise<b
 
 function buildPrompt(scores: Scores): string {
   const { bf, ri, wv, mv, hollandCode, topValues, topMotivators } = scores
+  // The scored shortlist is handed to the model as evidence, not decoration.
+  // Without it the model tends to regress to the same safe, generic roles for
+  // every profile, which is the exact failure the deterministic engine fixes.
+  const shortlist = deriveCareerMatches(scores, 8) as string[]
   return `You are a senior career psychologist. Return ONLY valid JSON, no markdown, no backticks, no preamble.
 Big Five (0-100%): ${Object.entries(bf).map(([k, v]) => `${BF_LABELS[k]}=${pct(v)}%`).join(', ')}
 RIASEC (0-100%): ${Object.entries(ri).map(([k, v]) => `${RI_LABELS[k]}=${pct(v)}%`).join(', ')}
@@ -298,6 +303,11 @@ Work Values (1-5): ${Object.entries(wv).map(([k, v]) => `${k}=${v.toFixed(1)}`).
 Top Values: ${topValues.join(', ')}
 Motivation (1-5): ${Object.entries(mv).map(([k, v]) => `${k}=${v.toFixed(1)}`).join(', ')}
 Top Motivators: ${topMotivators.join(', ')}
+
+Congruence-scored shortlist for THIS profile, best fit first: ${shortlist.join(', ')}.
+Rules for careerMatches: return five roles that fit the scores above. Draw at least three of them from the shortlist, keeping its ordering sense; you may substitute up to two with a more specific or adjacent role ONLY if the scores clearly justify it. Never return generic filler such as "research associate", "program coordinator" or "strategy support analyst" unless the shortlist actually contains it. The five roles must be meaningfully different from each other.
+Rules for keyStrengths: each strength must reference something specific to these scores — a named trait level, interest theme, value or driver — not a compliment that would fit anybody.
+
 Return exactly: {"headline":"3-4 word career identity label","tagline":"One evocative sentence","personalitySummary":"2-3 sentences on Big Five","careerInterestSummary":"2-3 sentences on RIASEC","valuesSummary":"1-2 sentences","motivationSummary":"1-2 sentences","integratedInsight":"3-4 sentences synthesising all four dimensions","careerMatches":["role 1","role 2","role 3","role 4","role 5"],"keyStrengths":["strength 1","strength 2","strength 3"],"developmentNote":"1-2 sentences on growth edge"}`
 }
 

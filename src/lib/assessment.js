@@ -18,6 +18,12 @@ export {
   computeScores,
   buildFallbackReport,
   microInsightForSection,
+  CAREER_LIBRARY,
+  careerFit,
+  rankCareers,
+  deriveCareerMatches,
+  deriveKeyStrengths,
+  deriveHeadline,
 } from '../../supabase/functions/_shared/assessment-core.js'
 
 // Maps a saved assessment_submissions row (snake_case columns) into the shape
