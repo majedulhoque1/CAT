@@ -5,18 +5,16 @@ import { SITE } from '../content/site'
 
 export default function SiteHeader() {
   const rail = useRef(null)
-  const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
-
-  // A route change is the visitor telling us where they wanted to go — close
-  // the drawer for them instead of leaving it open over the new page.
-  useEffect(() => {
-    setMenuOpen(false)
-  }, [location.pathname])
+  // The drawer is open only for the page it was opened on, so a route change is
+  // the visitor telling us where they wanted to go and closes it, with no
+  // setState-in-effect.
+  const [openPath, setOpenPath] = useState(null)
+  const menuOpen = openPath === location.pathname
 
   useEffect(() => {
     if (!menuOpen) return undefined
-    const onKey = (e) => { if (e.key === 'Escape') setMenuOpen(false) }
+    const onKey = (e) => { if (e.key === 'Escape') setOpenPath(null) }
     document.addEventListener('keydown', onKey)
     const prevOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
@@ -88,7 +86,7 @@ export default function SiteHeader() {
           aria-expanded={menuOpen}
           aria-controls="site-nav"
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          onClick={() => setMenuOpen((v) => !v)}
+          onClick={() => setOpenPath(menuOpen ? null : location.pathname)}
         >
           <span />
         </button>

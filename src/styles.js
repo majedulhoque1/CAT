@@ -626,4 +626,63 @@ html,body{background:var(--paper);overflow-anchor:none;overflow-x:hidden}
 .a-resp-row{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-16);padding:var(--sp-8) 0;border-bottom:1px solid var(--grey-200)}
 .a-resp-row:last-child{border-bottom:none}
 .a-dot{width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:var(--fs-12);font-weight:500;color:var(--paper);background:var(--ink);flex-shrink:0}
+
+/* ============================================================
+   Skill Assessment — additive. No new hue, no new --signal use:
+   every state is carried by ink/paper inversion and hairlines.
+   ============================================================ */
+.skill-prompt{font-size:var(--fs-24);line-height:var(--lh-32);font-weight:400;margin:var(--sp-48) 0 var(--sp-24);outline:none}
+.skill-block{margin-bottom:var(--sp-48)}
+.skill-actions{margin-top:var(--sp-32);display:grid;gap:var(--sp-8)}
+.plain-list{list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-8)}
+.selfrate-group{border:none;padding:0;margin:0;min-width:0}
+
+.choice-list{display:grid;gap:var(--sp-8)}
+.choice{display:flex;gap:var(--sp-16);align-items:flex-start;width:100%;min-height:var(--touch-min);padding:var(--sp-16);text-align:left;border:1px solid var(--rule);background:var(--surface);color:var(--on-surface);font-family:var(--font-body);font-size:var(--fs-16);line-height:var(--lh-16);cursor:pointer;transition:background .12s,color .12s,border-color .12s}
+.choice .key{flex-shrink:0;width:20px;font-family:var(--font-mono);font-size:var(--fs-14);color:var(--muted)}
+.choice:hover{background:var(--rule)}
+.choice.sel{background:var(--on-surface);color:var(--surface);border-color:var(--on-surface)}
+.choice.sel .key{color:var(--surface)}
+.choice:focus-visible{outline:2px solid var(--on-surface);outline-offset:2px}
+
+.stimulus{margin:0 0 var(--sp-24);border:1px solid var(--rule);padding:var(--sp-16)}
+.stimulus-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.stimulus-table{border-collapse:collapse;width:100%;font-size:var(--fs-14);font-variant-numeric:tabular-nums}
+.stimulus-table caption{text-align:left;font-family:var(--font-mono);font-size:var(--fs-12);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding-bottom:var(--sp-8)}
+.stimulus-table th,.stimulus-table td{padding:var(--sp-8) var(--sp-16);border-bottom:1px solid var(--rule);text-align:left;white-space:nowrap}
+.stimulus-table th{border-bottom:1px solid var(--on-surface);font-weight:500}
+.stimulus-table th:not(:first-child),.stimulus-table td:not(:first-child){text-align:right}
+.chart-title{font-size:var(--fs-12);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:var(--sp-8)}
+.chart-svg{display:block;width:100%;height:auto;color:var(--on-surface)}
+.chart-svg text{fill:currentColor;font-family:var(--font-mono)}
+.chart-axis-label{font-size:12px;opacity:.6}
+.chart-tick{font-size:12px;opacity:.7}
+.chart-value{font-size:13px;font-weight:500}
+.chart-details{margin-top:var(--sp-8)}
+.chart-details summary{cursor:pointer;font-family:var(--font-mono);font-size:var(--fs-12);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding:var(--sp-8) 0}
+.chart-details[open] .stimulus-scroll{margin-top:var(--sp-8)}
+
+.ladder{border:1px solid var(--on-surface)}
+.ladder-rung{display:flex;justify-content:space-between;gap:var(--sp-16);padding:var(--sp-16);border-bottom:1px solid var(--rule);font-size:var(--fs-14)}
+.ladder-rung:last-child{border-bottom:none}
+.ladder-rung.current{background:var(--on-surface);color:var(--surface);border-bottom-color:var(--on-surface)}
+
+.calib{border-top:1px solid var(--on-surface)}
+.calib-row{display:flex;justify-content:space-between;gap:var(--sp-24);padding:var(--sp-16) 0;border-bottom:1px solid var(--rule)}
+.calib-vals{text-align:right;flex-shrink:0;line-height:1.7}
+
+.course-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--on-surface)}
+.course-row{padding:var(--sp-16) 0;border-bottom:1px solid var(--rule)}
+.course-title{color:var(--on-surface);font-weight:500;text-decoration:none;border-bottom:1px solid var(--signal);padding-bottom:1px}
+.course-title:hover{border-bottom-width:2px}
+.more-courses{margin-top:var(--sp-24)}
+.more-courses summary{cursor:pointer;font-family:var(--font-mono);font-size:var(--fs-12);color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding:var(--sp-8) 0}
+
+.skill-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:var(--sp-32)}
+.skill-card{border-top:1px solid var(--on-surface);padding-top:var(--sp-24)}
+.skill-card-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:var(--sp-8) var(--sp-16)}
+
+@media (max-width:899.98px){.admin-skill-grid{grid-template-columns:minmax(0,1fr)!important}}
+
+@media print{.stimulus-scroll{overflow:visible}.more-courses:not([open]) > *:not(summary){display:none}}
 `

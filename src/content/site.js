@@ -5,9 +5,11 @@
 export const SITE = {
   brandName: 'thriveABL',
 
-  // Standalone assessment tool: there's no About/Services/Contact/Coaching
-  // page here to link to, so the header carries just the brand mark + CTA.
-  nav: [],
+  // Two instruments: the Career Assessment (the home page) and the Skill Assessment.
+  nav: [
+    { to: '/', label: 'Career Assessment' },
+    { to: '/skills', label: 'Skill Assessment' },
+  ],
 
   navCta: { to: '/book', label: 'Book a session' },
 
