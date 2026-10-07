@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "node supabase/functions/_shared/assessment-core.test.mjs && node supabase/functions/_shared/skill-core.test.mjs && node src/lib/recommendCourses.test.mjs && node src/lib/itemStats.test.mjs && node supabase/seed/skill_courses.test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

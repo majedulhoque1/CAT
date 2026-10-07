@@ -6,6 +6,10 @@ import AdminDashboard from './AdminDashboard'
 import AdminSubmissionDetail from './AdminSubmissionDetail'
 import AdminBookings from './AdminBookings'
 import AdminAvailability from './AdminAvailability'
+import AdminSkills from './AdminSkills'
+import AdminSkillDetail from './AdminSkillDetail'
+import AdminCourses from './AdminCourses'
+import AdminItemStats from './AdminItemStats'
 
 export default function AdminApp() {
   const [session, setSession] = useState(null)
@@ -62,6 +66,10 @@ export default function AdminApp() {
         <Route path="submissions/:submissionId" element={<AdminSubmissionDetail />} />
         <Route path="bookings" element={<AdminBookings />} />
         <Route path="availability" element={<AdminAvailability />} />
+        <Route path="skills" element={<AdminSkills />} />
+        <Route path="skills/:submissionId" element={<AdminSkillDetail />} />
+        <Route path="courses" element={<AdminCourses />} />
+        <Route path="skill-stats" element={<AdminItemStats />} />
       </Routes>
     </div>
   )

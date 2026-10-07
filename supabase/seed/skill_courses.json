@@ -1,0 +1,2476 @@
+[
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Basic Statistics",
+    "provider": "University of Amsterdam (Coursera)",
+    "url": "https://www.coursera.org/learn/basic-statistics",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 18,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/basic-statistics",
+    "notes": "Beginner course, no prior experience needed; covers descriptive statistics, distributions and sampling. Certificate is paid; free access options vary on the page."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "Data and statistics (6th grade: mean, median and mode)",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/k-8-grades/cc-sixth-grade-math/cc-6th-data-statistics",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/k-8-grades/cc-sixth-grade-math/cc-6th-data-statistics",
+    "notes": "Gentle unit with videos and practice on calculating mean, median and mode and how outliers shift them; for absolute beginners."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Exploring data: Graphs and numerical summaries",
+    "provider": "The Open University (OpenLearn)",
+    "url": "https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/exploring-data-graphs-and-numerical-summaries/content-section-0",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 20,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/exploring-data-graphs-and-numerical-summaries/content-section-0",
+    "notes": "Level 1 course on histograms and numerical summaries: median, mean, standard deviation, IQR and resistant measures; free badge/statement on completion."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation",
+      "proportions"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Introduction to Probability and Statistics (18.05)",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022",
+    "notes": "Undergraduate course with notes, problem sets and R tutorials on distributions, confidence intervals and inference; needs calculus."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Introductory Statistics 2e, Chapter 2: Descriptive Statistics",
+    "provider": "OpenStax",
+    "url": "https://openstax.org/books/introductory-statistics-2e/pages/2-introduction",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://openstax.org/books/introductory-statistics-2e/pages/2-introduction",
+    "notes": "Free textbook chapter on quartiles, percentiles, mean/median/mode, variance, standard deviation and box plots; suits learners who want worked examples."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Mean, Median, and Mode: Measures of Central Tendency: Crash Course Statistics #3",
+    "provider": "Crash Course",
+    "url": "https://thecrashcourse.com/courses/mean-median-and-mode-measures-of-central-tendency-crash-course-statistics-3",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://thecrashcourse.com/courses/mean-median-and-mode-measures-of-central-tendency-crash-course-statistics-3",
+    "notes": "Short video on how mean, median and mode differ, what their relationship reveals, and how averages can mislead."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation",
+      "evidence-causation"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "OpenIntro Statistics",
+    "provider": "OpenIntro",
+    "url": "https://www.openintro.org/book/os",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.openintro.org/book/os",
+    "notes": "Free PDF textbook with videos, slides and labs; covers summarizing data, distributions, sampling and inference."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Prices, location and spread",
+    "provider": "The Open University (OpenLearn)",
+    "url": "https://www.open.edu/openlearn/science-maths-technology/prices-location-and-spread/content-section-0",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 18,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/science-maths-technology/prices-location-and-spread/content-section-0",
+    "notes": "Level 1 introductory course using price data to teach median, mean, weighted averages, interquartile range and boxplots."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "STAT 500: Applied Statistics",
+    "provider": "Penn State Department of Statistics",
+    "url": "https://online.stat.psu.edu/stat500",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://online.stat.psu.edu/stat500",
+    "notes": "Open (CC BY-NC) course notes reviewing probability, common distributions and statistical methods at graduate-refresher level."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Statistical Thinking for the 21st Century",
+    "provider": "Russell A. Poldrack",
+    "url": "https://statsthinking21.github.io/statsthinking21-core-site",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://statsthinking21.github.io/statsthinking21-core-site",
+    "notes": "Free online book covering summarizing data, skew and long-tailed distributions, variability, sampling error and the bootstrap."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Statistics - A Full University Course on Data Science Basics",
+    "provider": "freeCodeCamp (instructor Monika Wahi)",
+    "url": "https://www.freecodecamp.org/news/free-statistics-course",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": 8,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.freecodecamp.org/news/free-statistics-course",
+    "notes": "8-hour free video course (article page embeds it) covering central tendency, variation, percentiles, box plots and the normal distribution."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Statistics 110: Probability",
+    "provider": "Harvard University",
+    "url": "https://stat110.hsites.harvard.edu/",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://stat110.hsites.harvard.edu/",
+    "notes": "Harvard course site (free lecture videos and free online textbook) on probability and distributions; rigorous foundation for variation and sampling."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation",
+      "evidence-causation"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Statistics Done Wrong",
+    "provider": "Alex Reinhart",
+    "url": "https://www.statisticsdonewrong.com/",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.statisticsdonewrong.com/",
+    "notes": "Free online guide to common statistical errors including small samples, power and misleading summaries; assumes no prior statistics."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Statistics for Applications (18.650)",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016",
+    "notes": "Rigorous undergraduate course with lecture videos on the mathematical foundations of estimation and statistical methods; for strong quantitative learners."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Summarizing quantitative data",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data",
+    "notes": "Unit on mean vs median, range, IQR, standard deviation and identifying outliers, with practice exercises; suits beginners to early learners."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "averages-variation"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Think Stats 2e",
+    "provider": "Allen B. Downey (Green Tea Press)",
+    "url": "https://greenteapress.com/thinkstats2",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://greenteapress.com/thinkstats2",
+    "notes": "Free Python-based book exploring real datasets: distributions, summary statistics, outliers and estimation; for learners comfortable with code."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Calling Bullshit: video lectures",
+    "provider": "University of Washington (Carl Bergstrom and Jevin West)",
+    "url": "https://callingbullshit.org/videos.html",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": 10,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://callingbullshit.org/videos.html",
+    "notes": "Ten lectures including correlation and causation, statistical traps, publication bias and fake news; for learners who know the basics."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Causal Diagrams: Draw Your Assumptions Before Your Conclusions",
+    "provider": "HarvardX (edX), Miguel Hernan",
+    "url": "https://www.edx.org/learn/data-analysis/harvard-university-causal-diagrams-draw-your-assumptions-before-your-conclusions",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 22,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.edx.org/learn/data-analysis/harvard-university-causal-diagrams-draw-your-assumptions-before-your-conclusions",
+    "notes": "9-week course using causal diagrams to identify confounding and bias; free audit, verified certificate paid."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Causal Inference: The Remix (The Mixtape)",
+    "provider": "Scott Cunningham",
+    "url": "https://mixtape.scunning.com/",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://mixtape.scunning.com/",
+    "notes": "Free online textbook on causal inference for social sciences: DAGs, potential outcomes, RDD, IV, diff-in-diff, synthetic control."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Causal Inference: What If",
+    "provider": "Miguel Hernan and James Robins (Harvard)",
+    "url": "https://miguelhernan.org/whatifbook",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://miguelhernan.org/whatifbook",
+    "notes": "Free textbook on causal inference from observational data and trials, with code in R, SAS, Stata, Python and Julia."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Correlation Doesn't Equal Causation: Crash Course Statistics #8",
+    "provider": "Crash Course",
+    "url": "https://thecrashcourse.com/courses/correlation-doesnt-equal-causation-crash-course-statistics-8",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": 0.2,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://thecrashcourse.com/courses/correlation-doesnt-equal-causation-crash-course-statistics-8",
+    "notes": "Short video on correlation vs causation, scatter plots and why co-movement does not prove cause; beginner friendly."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Critical Evaluation in Data Science: Data, the World, and You",
+    "provider": "University of Adelaide (FutureLearn)",
+    "url": "https://www.futurelearn.com/courses/critical-evaluation-in-data-science",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 30,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.futurelearn.com/courses/critical-evaluation-in-data-science",
+    "notes": "6-week course on spotting misleading statistics, sampling, variability and study design; limited free access, paid upgrade for full access."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "How Not To Run an A/B Test",
+    "provider": "Evan Miller",
+    "url": "https://www.evanmiller.org/how-not-to-run-an-ab-test.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.evanmiller.org/how-not-to-run-an-ab-test.html",
+    "notes": "Article on why repeatedly peeking at significance inflates false positives in A/B tests, with fixes."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Improving your statistical inferences",
+    "provider": "Eindhoven University of Technology (Coursera, Daniel Lakens)",
+    "url": "https://www.coursera.org/learn/statistical-inferences",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 30,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/statistical-inferences",
+    "notes": "Covers p-values, effect sizes, power, publication bias and experimental design; free to audit, certificate paid."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "A/B Testing",
+    "provider": "Udacity (taught by Google)",
+    "url": "https://www.udacity.com/course/ab-testing--ud257",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.udacity.com/course/ab-testing--ud257",
+    "notes": "Free five-lesson course on designing and analysing online A/B tests, metrics, ethics and power; beginner level."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Introduction to Causal Inference",
+    "provider": "Brady Neal",
+    "url": "https://www.bradyneal.com/causal-inference-course",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.bradyneal.com/causal-inference-course",
+    "notes": "Free 14-week lecture course on potential outcomes, causal graphs, randomized experiments and more; needs basic probability."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Making Sense of Data in the Media",
+    "provider": "University of Sheffield (FutureLearn)",
+    "url": "https://www.futurelearn.com/courses/media-data",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 9,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://futurelearn.com/courses/media-data",
+    "notes": "3-week course on evaluating statistics in the media, correlation vs causation and sampling error; limited free access, paid upgrade for certificate."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational",
+      "proficient"
+    ],
+    "title": "Making Sense of Statistics",
+    "provider": "Straight Statistics / Sense about Science",
+    "url": "https://straightstatistics.fullfact.org/resources/making-sense-statistics",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://straightstatistics.fullfact.org/resources/making-sense-statistics",
+    "notes": "Plain-language guide to numerical and statistical traps in news reporting, free PDF; written for journalists and general readers."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Sampling Methods and Bias with Surveys: Crash Course Statistics #10",
+    "provider": "Crash Course",
+    "url": "https://thecrashcourse.com/courses/sampling-methods-and-bias-with-surveys-crash-course-statistics-10",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": 0.2,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://thecrashcourse.com/courses/sampling-methods-and-bias-with-surveys-crash-course-statistics-10",
+    "notes": "Short video on good vs bad survey questions, how samples are chosen, and sources of bias and error."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Spurious Correlations",
+    "provider": "Tyler Vigen",
+    "url": "https://www.tylervigen.com/spurious-correlations",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.tylervigen.com/spurious-correlations",
+    "notes": "Browsable charts of coincidental correlations that show why correlation alone does not imply causation; good for beginners."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing",
+    "provider": "Cambridge University Press (Kohavi, Tang, Xu)",
+    "url": "https://experimentguide.com/",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://experimentguide.com/",
+    "notes": "Paid book on rigorous large-scale A/B testing and pitfalls; chapter 1 free to download."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Types of statistical studies (practice)",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/statistics-probability/designing-studies/types-studies-experimental-observational/e/types-of-statistical-studies",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/statistics-probability/designing-studies/types-studies-experimental-observational/e/types-of-statistical-studies",
+    "notes": "Khan Academy Study design unit exercise on telling experiments from observational and sample studies; part of a unit that also covers sampling bias and experiment design."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "evidence-causation"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Using statistics in your research",
+    "provider": "OpenLearn (Open University) / University of Wales Trinity Saint David",
+    "url": "https://www.open.edu/openlearn/education-development/university-ready/using-statistics-your-research",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 0.1,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/education-development/university-ready/using-statistics-your-research",
+    "notes": "Five-minute introduction to common misuses of statistics and the difference between correlation and causation; suits absolute beginners."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Bayes theorem, the geometry of changing beliefs",
+    "provider": "3Blue1Brown (YouTube)",
+    "url": "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+    "notes": "Visual explanation of base rates, priors and updating with test-style problems; for learners comfortable with percentages."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Bayes' theorem of conditional probability (Wireless Philosophy)",
+    "provider": "Khan Academy / Wireless Philosophy (CUNY)",
+    "url": "https://www.khanacademy.org/partner-content/wi-phi/wiphi-critical-thinking/wiphi-fundamentals/v/bayes-theorem",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/partner-content/wi-phi/wiphi-critical-thinking/wiphi-fundamentals/v/bayes-theorem",
+    "notes": "Short video on Bayes' theorem and the base rate fallacy (ignoring how common something is to begin with)."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions",
+      "reading-charts",
+      "evidence-causation"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Calling Bullshit: Data Reasoning in a Digital World",
+    "provider": "University of Washington",
+    "url": "https://callingbullshit.org/syllabus.html",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://callingbullshit.org/syllabus.html",
+    "notes": "Free course syllabus and readings incl. effect sizes, Fermi estimation, base-rate fallacy, Bayes' rule and misleading proportions."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Chapter 15: Interpreting results and drawing conclusions (Cochrane Handbook)",
+    "provider": "Cochrane",
+    "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+    "notes": "Expert guidance on risk ratios, relative and absolute risk reduction, risk difference, NNT and baseline-risk dependence; assumes some statistics background."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "Get ready for ratios, rates, and percentages",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/get-ready-for-6th-grade/x55793c7ff6b02d3d:get-ready-for-ratios-rates-and-percentages",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/get-ready-for-6th-grade/x55793c7ff6b02d3d:get-ready-for-ratios-rates-and-percentages",
+    "notes": "Preparatory unit reviewing multiplication, division and graphing before ratios, rates and percentages; suits learners starting from scratch."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Helping Doctors and Patients Make Sense of Health Statistics",
+    "provider": "Psychological Science in the Public Interest (Gigerenzer et al.)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/26161749",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://pubmed.ncbi.nlm.nih.gov/26161749",
+    "notes": "2007 landmark review on relative vs absolute risk, natural frequencies and base rates in screening; PubMed record, free full-text copies exist."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Introduction to Percents",
+    "provider": "Math is Fun",
+    "url": "https://www.mathsisfun.com/percentage.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.mathsisfun.com/percentage.html",
+    "notes": "Plain-language intro to percent as per 100 with visual grids and conversions between percents, decimals and fractions; for absolute beginners."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Know Your Chances: Understanding Health Statistics",
+    "provider": "University of California Press (NCBI Bookshelf)",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK115435",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK115435",
+    "notes": "Woloshin, Schwartz and Welch: reading risk numbers, absolute vs relative change and risk charts; free under Creative Commons."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Rates and percentages (6th grade)",
+    "provider": "Khan Academy",
+    "url": "https://en.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://en.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
+    "notes": "Rates, percent meaning, and converting between percents, fractions and decimals with practice; free."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "foundational"
+    ],
+    "title": "Rates and percentages (7th grade)",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals",
+    "notes": "Percent word problems: discounts, tax, tips, markup and multi-step ratio and percent problems; free practice for learners who make frequent errors."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Ratio, Proportion and Percentages",
+    "provider": "The Open University (OpenLearn)",
+    "url": "https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/ratio-proportion-and-percentages",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 5,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/ratio-proportion-and-percentages",
+    "notes": "Level 1 introductory course: simple ratios, fractions/decimals/percentages, finding percentages, percentage increase and decrease; free statement of participation."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "foundational"
+    ],
+    "title": "Ratios and rates (Pre-algebra)",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates",
+    "notes": "Proportional relationships, ratios, unit rates and rate problems with guided practice; free."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Survival Statistics: Secrets for Demystifying Numbers",
+    "provider": "Royal Holloway, University of London (FutureLearn)",
+    "url": "https://futurelearn.com/courses/survival-statistics-secrets-for-demystifying-numbers",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 9,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://futurelearn.com/courses/survival-statistics-secrets-for-demystifying-numbers",
+    "notes": "3-week course (about 3 hours a week) on absolute vs relative risk, confusing percentages, rare events and surveys; FutureLearn access may be time-limited."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Think Bayes 2",
+    "provider": "Allen B. Downey",
+    "url": "https://allendowney.github.io/ThinkBayes2",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://allendowney.github.io/ThinkBayes2",
+    "notes": "Free computational Bayesian statistics book with Jupyter notebooks; for strong learners wanting rigorous work on priors and base rates."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "proportions"
+    ],
+    "levels": [
+      "foundational"
+    ],
+    "title": "Unit rates and percentages",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-3-unit-rates-and-percentages",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-3-unit-rates-and-percentages",
+    "notes": "Unit rates and percentages building on equivalent ratios, with practice exercises; free."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "foundational"
+    ],
+    "title": "Analyzing categorical data",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data",
+    "notes": "Unit with videos and practice on reading and interpreting bar graphs and two-way tables; guided practice for learners making frequent errors."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Bar chart (Statistics: Power from Data!, section 5.2)",
+    "provider": "Statistics Canada",
+    "url": "https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/bargraph-diagrammeabarres/5214818-eng.htm",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/bargraph-diagrammeabarres/5214818-eng.htm",
+    "notes": "Government guide to vertical, grouped, horizontal and stacked bar charts with real data; sibling pages cover pie, line, scatterplot and histogram."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "Bar Graphs",
+    "provider": "Math is Fun",
+    "url": "https://www.mathsisfun.com/data/bar-graphs.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.mathsisfun.com/data/bar-graphs.html",
+    "notes": "Plain-language explanation of bar graph parts, axes and values starting at zero, with examples and links to line graphs and pie charts."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Caveats: a collection of graphic pitfalls",
+    "provider": "Data to Viz",
+    "url": "https://www.data-to-viz.com/caveats.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.data-to-viz.com/caveats.html",
+    "notes": "30+ chart pitfalls with visual examples: pie charts, axis cutting, dual axes, bin sizes, overplotting, Simpson paradox."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Charts Are Like Pasta - Data Visualization Part 1: Crash Course Statistics #5",
+    "provider": "Crash Course",
+    "url": "https://thecrashcourse.com/?p=1660",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": 0.2,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://thecrashcourse.com/?p=1660",
+    "notes": "About 10-minute video on bar charts, pie charts, pictographs and histograms, what they show and how they can mislead."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "CSEP 590a Data Visualization",
+    "provider": "University of Washington (Jeffrey Heer)",
+    "url": "https://courses.cs.washington.edu/courses/csep590a/25wi",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://courses.cs.washington.edu/courses/csep590a/25wi",
+    "notes": "University course with public lecture videos on visual encoding, perception, colour and uncertainty; assumes some technical comfort."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Data Visualization (University of Illinois Urbana-Champaign)",
+    "provider": "Coursera",
+    "url": "https://www.coursera.org/learn/datavisualization",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 20,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/datavisualization",
+    "notes": "Beginner course on design and human perception principles for choosing effective visual displays; free to audit, paid certificate."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Financial Times Visual Vocabulary",
+    "provider": "Financial Times Visual Journalism Team",
+    "url": "https://github.com/Financial-Times/chart-doctor/blob/main/visual-vocabulary/README.md",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://github.com/Financial-Times/chart-doctor/blob/main/visual-vocabulary/README.md",
+    "notes": "Reference poster and guide to chart types by purpose (deviation, correlation, distribution, time, part-to-whole); good for interpreting less common charts."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Fundamentals of Data Visualization",
+    "provider": "Claus O. Wilke",
+    "url": "https://clauswilke.com/dataviz",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://clauswilke.com/dataviz",
+    "notes": "Free online book on how data maps to visual properties, proportional ink, colour pitfalls and uncertainty displays."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "How Charts Lie: Getting Smarter about Visual Information",
+    "provider": "Alberto Cairo (W. W. Norton)",
+    "url": "https://wwnorton.co.uk/books/9780393358421-how-charts-lie-f7b127a1-513b-4789-bd66-05218c839be1",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://wwnorton.co.uk/books/9780393358421-how-charts-lie-f7b127a1-513b-4789-bd66-05218c839be1",
+    "notes": "Paid book on how charts mislead through design, dubious data, hidden uncertainty and misleading patterns."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "How to spot a misleading graph",
+    "provider": "TED-Ed (Lea Gaslowitz)",
+    "url": "https://ed.ted.com/lessons/how-to-spot-a-misleading-graph-lea-gaslowitz",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ed.ted.com/lessons/how-to-spot-a-misleading-graph-lea-gaslowitz",
+    "notes": "Short animated lesson on how graphs can be used carelessly or dishonestly and what to check."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "Reading bar graphs",
+    "provider": "Khan Academy",
+    "url": "https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/reading-bar-graphs",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.khanacademy.org/math/statistics-probability/analyzing-categorical-data/one-categorical-variable/v/reading-bar-graphs",
+    "notes": "Short video showing how to read values off a bar graph; suits absolute beginners."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Tools: Misleading axes on graphs",
+    "provider": "Calling Bullshit (University of Washington)",
+    "url": "https://callingbullshit.org/tools/tools_misleading_axes.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://callingbullshit.org/tools/tools_misleading_axes.html",
+    "notes": "Explains zero baselines for bars vs lines, dual axes, log vs linear scales and inverted axes."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Visualization Analysis and Design",
+    "provider": "Tamara Munzner (University of British Columbia)",
+    "url": "https://www.cs.ubc.ca/~tmm/vadbook",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": 6.5,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.cs.ubc.ca/~tmm/vadbook",
+    "notes": "Rigorous framework for visual encoding and design; book is paid but the author site offers free lecture videos (6.5+ hours) and slides."
+  },
+  {
+    "skill_slug": "data-literacy",
+    "subskill_ids": [
+      "reading-charts"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Working with charts, graphs and tables",
+    "provider": "The Open University (OpenLearn)",
+    "url": "https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/working-charts-graphs-and-tables",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 15,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/working-charts-graphs-and-tables",
+    "notes": "Introductory course on reading tables, percentages, pie and bar charts, histograms and line graphs; free statement of participation."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "15.279 Management Communication for Undergraduates",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012",
+    "notes": "Strategic professional communication: analysing audience, purpose and context, including cross-cultural communication."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone",
+      "clarity-structure"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "15.280 Communication for Managers",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016",
+    "notes": "Graduate-level workshop materials on strategic communication, writing and speaking for managers."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "15.281 Advanced Communication for Leaders",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/15-281-advanced-communication-for-leaders-spring-2016",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/15-281-advanced-communication-for-leaders-spring-2016",
+    "notes": "Graduate materials on presenting to hostile audiences, executive summaries and interpersonal communication for leaders."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "foundational"
+    ],
+    "title": "Business English for Cross-cultural Communication",
+    "provider": "HKUST (Coursera)",
+    "url": "https://www.coursera.org/learn/cross-cultural-communication-business",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/cross-cultural-communication-business",
+    "notes": "Beginner course on spotting cross-cultural misunderstandings and adapting business writing and speaking."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone",
+      "difficult-conversations",
+      "listening-questions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Effective communication in the workplace",
+    "provider": "The Open University (OpenLearn)",
+    "url": "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 24,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace",
+    "notes": "8-week introductory course; Week 5 on adapting written style to audiences and Week 7 on communicating across culture and generations."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Getting to Si, Ja, Oui, Hai, and Da",
+    "provider": "Harvard Business Review",
+    "url": "https://hbr.org/2015/12/getting-to-si-ja-oui-hai-and-da",
+    "cost": "paid",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://hbr.org/2015/12/getting-to-si-ja-oui-hai-and-da",
+    "notes": "Erin Meyer on reading cultural context when negotiating and persuading across borders; subscriber content."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Harnessing the Science of Persuasion",
+    "provider": "Harvard Business Review",
+    "url": "https://hbr.org/2001/10/harnessing-the-science-of-persuasion",
+    "cost": "paid",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://hbr.org/2001/10/harnessing-the-science-of-persuasion",
+    "notes": "Cialdini's classic HBR article on six principles of persuasion for leaders; subscriber content."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone",
+      "clarity-structure"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "High-Impact Business Writing",
+    "provider": "University of California, Irvine (Coursera)",
+    "url": "https://www.coursera.org/learn/business-writing",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 8,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/business-writing",
+    "notes": "Beginner course on emails, presentations and reports for business audiences; free to audit, paid certificate."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "How to Brief a Senior Executive",
+    "provider": "Harvard Business Review",
+    "url": "https://store.hbr.org/product/how-to-brief-a-senior-executive/H05Z8Z",
+    "cost": "paid",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://store.hbr.org/product/how-to-brief-a-senior-executive/H05Z8Z",
+    "notes": "HBR article (US$11.95) on communicating with senior leadership and delivering executive briefings."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Influencing People",
+    "provider": "University of Michigan (Coursera)",
+    "url": "https://www.coursera.org/learn/influencing-people",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 12,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/influencing-people",
+    "notes": "Influence tactics and building informal power with peers, superiors and stakeholders; free to audit."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Knowing Your Audience (Business Writing)",
+    "provider": "Purdue Online Writing Lab (OWL)",
+    "url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/audience.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/business_writing_for_administrative_and_clerical_staff/audience.html",
+    "notes": "Short guide to adjusting tone, format and content to audience characteristics such as position and familiarity."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Speaking and Presenting: Pitches and Persuasion",
+    "provider": "University of Michigan (Coursera)",
+    "url": "https://www.coursera.org/learn/speaking-and-presenting-pitches-persuasion",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 9,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/speaking-and-presenting-pitches-persuasion",
+    "notes": "Crafting persuasive messages and pitching ideas to different audiences; free to audit."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone",
+      "difficult-conversations"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Successful Negotiation: Essential Strategies and Skills",
+    "provider": "University of Michigan (Coursera)",
+    "url": "https://www.coursera.org/learn/negotiation-skills",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/negotiation-skills",
+    "notes": "Popular negotiation course covering framing and influence in business communication; graded work needs paid certificate."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "The Culture Map: Breaking Through the Invisible Boundaries of Global Business",
+    "provider": "Erin Meyer (INSEAD)",
+    "url": "https://erinmeyer.com/books/the-culture-map",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://erinmeyer.com/books/the-culture-map",
+    "notes": "Eight-scale framework for how culture shapes communicating, persuading and giving feedback; companion mapping tools."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Tone in Business Writing",
+    "provider": "Purdue Online Writing Lab (OWL)",
+    "url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/tone_in_business_writing.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/tone_in_business_writing.html",
+    "notes": "Concise guide to choosing confident, courteous, reader-focused tone and handling negative messages."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "Workplace Communication Basics",
+    "provider": "Alison",
+    "url": "https://alison.com/course/workplace-communication-basics",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://alison.com/course/workplace-communication-basics",
+    "notes": "Short beginner course on verbal, listening and written workplace communication; good first step for absolute beginners."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone",
+      "clarity-structure"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Write Professional Emails in English",
+    "provider": "Georgia Institute of Technology (Coursera)",
+    "url": "https://www.coursera.org/learn/professional-emails-english",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/professional-emails-english",
+    "notes": "Beginner course on email formats, tone and formality, including how culture affects what is appropriate."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "audience-tone"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Writing Better E-Mails",
+    "provider": "Alison",
+    "url": "https://alison.com/course/writing-better-e-mails",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://alison.com/course/writing-better-e-mails",
+    "notes": "Short course on polite, concise, professional email writing and etiquette for addressing recipients."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Business Writing",
+    "provider": "University of Colorado Boulder (Coursera)",
+    "url": "https://www.coursera.org/learn/writing-for-business",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/writing-for-business",
+    "notes": "Beginner course on organizing business documents, structure, grammar and revision for clarity."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Communicating in Technical Organizations (21W.780)",
+    "provider": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001",
+    "notes": "Undergraduate course materials on email, document forms, style, collaborative writing and oral presentation in organizations."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Plain Language Guide Series",
+    "provider": "Digital.gov (U.S. General Services Administration)",
+    "url": "https://digital.gov/guides/plain-language",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://digital.gov/guides/plain-language",
+    "notes": "Government guides on plain language principles, writing for understanding, design and testing clarity with readers."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Politics and the English Language",
+    "provider": "George Orwell (The Orwell Foundation)",
+    "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language",
+    "notes": "Classic 1946 essay on vague, padded and stale prose and rules for writing plainly; free to read."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "Professional Business Writing Skills",
+    "provider": "Alison",
+    "url": "https://alison.com/course/professional-business-writing-skills",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://alison.com/course/professional-business-writing-skills",
+    "notes": "Beginner video course on formatting sentences and paragraphs, structuring emails, proposals and reports, and proofreading."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Professional, Technical Writing",
+    "provider": "Purdue Online Writing Lab (Purdue OWL)",
+    "url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html",
+    "notes": "Free reference pages on effective workplace writing, audience, memos, reports, tone and revision."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Steven Pinker - The Sense of Style at McGill University 2014/10",
+    "provider": "YouTube (Steven Pinker talk at McGill University)",
+    "url": "https://www.youtube.com/watch?v=j7BN76JFLoI",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://www.youtube.com/watch?v=j7BN76JFLoI",
+    "notes": "Cognitive-science-based talk on classic style, the curse of knowledge and writing clearly for readers."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Style: Lessons in Clarity and Grace (13th edition)",
+    "provider": "Pearson (Joseph M. Williams and Joseph Bizup)",
+    "url": "https://www.pearson.com/en-us/subject-catalog/p/style-lessons-in-clarity-and-grace/P200000002140/9780135163757",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.pearson.com/en-us/subject-catalog/p/style-lessons-in-clarity-and-grace/P200000002140/9780135163757",
+    "notes": "Rigorous method for diagnosing and revising unclear prose, concision and cohesion; paid textbook."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Successful Presentation",
+    "provider": "University of Colorado Boulder (Coursera)",
+    "url": "https://www.coursera.org/learn/presentation-skills",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/presentation-skills",
+    "notes": "Beginner course on a structural formula for presentations, verbal delivery and audience focus; covers spoken structure."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Technical Writing One",
+    "provider": "Google for Developers",
+    "url": "https://developers.google.com/tech-writing/one",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 1.6,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://developers.google.com/tech-writing/one",
+    "notes": "Short self-study course on clear, concise sentences, active voice, lists, paragraphs and audience; stated pre-class time about 96 minutes."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Technical Writing Two",
+    "provider": "Google for Developers",
+    "url": "https://developers.google.com/tech-writing/two",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 1.2,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://developers.google.com/tech-writing/two",
+    "notes": "Drafting and self-editing tactics, document organization and visuals; recommended after Technical Writing One (about 71 minutes pre-class)."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "The Elements of Style",
+    "provider": "William Strunk Jr. (Project Gutenberg)",
+    "url": "https://www.gutenberg.org/ebooks/37134",
+    "cost": "free",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.gutenberg.org/ebooks/37134",
+    "notes": "Public-domain classic on concise, direct prose and usage rules; free ebook."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "clarity-structure"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "The Pyramid Principle: Logic in Writing and Thinking (3rd edition)",
+    "provider": "Pearson (Barbara Minto)",
+    "url": "https://pearson.com/en-gb/subject-catalog/p/pyramid-principle-the-logic-in-writing-and-thinking/P200000005042/9781292372266",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://pearson.com/en-gb/subject-catalog/p/pyramid-principle-the-logic-in-writing-and-thinking/P200000005042/9781292372266",
+    "notes": "Definitive text on answer-first pyramid structure for business writing and thinking."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Building Self-Confidence Through Assertiveness",
+    "provider": "Alison",
+    "url": "https://alison.com/course/building-self-confidence-through-assertiveness",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 3.5,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://alison.com/course/building-self-confidence-through-assertiveness",
+    "notes": "Passive vs aggressive vs assertive communication, handling criticism and rejection, saying what you need; suits beginners."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Conflict Resolution Skills",
+    "provider": "University of California, Irvine (Coursera)",
+    "url": "https://www.coursera.org/learn/conflict-resolution-skills",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 6,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/conflict-resolution-skills",
+    "notes": "Beginner 6-hour course: active listening, communication styles, positions vs interests, building a conflict management plan."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Dealing with Difficult People and Situations",
+    "provider": "Alison",
+    "url": "https://alison.com/course/dealing-with-difficult-people-and-situations",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 3.5,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://alison.com/course/dealing-with-difficult-people-and-situations",
+    "notes": "Beginner course on communicating with hostile people and handling tough situations; types of difficult people, questioning and problem-solving steps."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "Difference and challenge in teams",
+    "provider": "The Open University (OpenLearn)",
+    "url": "https://www.open.edu/openlearn/money-business/leadership-management/difference-and-challenge-teams/content-section-overview",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 2,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/money-business/leadership-management/difference-and-challenge-teams/content-section-overview",
+    "notes": "Short introductory OpenLearn course on disagreement, assertiveness vs cooperation and collaborative resolution instead of compromise."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "foundational",
+      "proficient",
+      "advanced"
+    ],
+    "title": "Difficult Conversations: How to Discuss What Matters Most",
+    "provider": "Penguin Books (Stone, Patton, Heen)",
+    "url": "https://www.penguinrandomhouse.com/books/722989/difficult-conversations-by-douglas-stone-bruce-patton-and-sheila-heen-foreword-by-roger-fisher",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.penguinrandomhouse.com/books/722989/difficult-conversations-by-douglas-stone-bruce-patton-and-sheila-heen-foreword-by-roger-fisher",
+    "notes": "Harvard Negotiation Project classic (3rd ed. 2023): the three conversations, managing emotion and identity, hard feedback and bad news."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Free Course: Managing Difficult Conversations at Work",
+    "provider": "Simplilearn",
+    "url": "https://www.simplilearn.com/managing-difficult-conversations-course",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 0.85,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.simplilearn.com/managing-difficult-conversations-course",
+    "notes": "About 51 minutes of video: conversational fear, I-statements, tactical pausing, reframing hostility, repairing relationships after conflict."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Getting Past No: Negotiating in Difficult Situations",
+    "provider": "Random House Business (Fisher, Ury)",
+    "url": "https://www.penguin.co.uk/books/367158/getting-past-no-by-urywilliam-and-fisherroger/9780712655231",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.penguin.co.uk/books/367158/getting-past-no-by-urywilliam-and-fisherroger/9780712655231",
+    "notes": "Ury's strategy for staying in control under pressure, defusing anger and turning resistance into joint problem-solving."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "How to have constructive conversations (Julia Dhar)",
+    "provider": "TED",
+    "url": "https://www.ted.com/talks/julia_dhar_how_to_have_constructive_conversations",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.ted.com/talks/julia_dhar_how_to_have_constructive_conversations",
+    "notes": "Debate champion's TED talk on three features of productive disagreement: seeking progress rather than victory."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "How to use others' feedback to learn and grow (Sheila Heen, TEDx)",
+    "provider": "TEDxAmoskeagMillyardWomen (YouTube)",
+    "url": "https://www.youtube.com/watch?v=FQNbaKkYk_Q",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.youtube.com/watch?v=FQNbaKkYk_Q",
+    "notes": "Harvard Negotiation Project researcher on receiving hard feedback well; companion to Thanks for the Feedback."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator",
+    "provider": "Yale University (Coursera)",
+    "url": "https://www.coursera.org/learn/negotiation",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 30,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/negotiation",
+    "notes": "Barry Nalebuff's course with interactive negotiations; includes advanced topics such as negotiating with no power; free audit available."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Mediation and Conflict Resolution",
+    "provider": "ESSEC Business School (Coursera)",
+    "url": "https://www.coursera.org/learn/conflict-resolution-mediation",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 20,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/conflict-resolution-mediation",
+    "notes": "Intermediate course on mediation fundamentals in workplace and international contexts; free to audit."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Negotiation and Conflict Management (15.667)",
+    "provider": "MIT OpenCourseWare (MIT Sloan)",
+    "url": "https://ocw.mit.edu/courses/15-667-negotiation-and-conflict-management-spring-2001",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/15-667-negotiation-and-conflict-management-spring-2001",
+    "notes": "Graduate-level free course materials: negotiation styles, role-play simulations, difficult situations, first- and third-party conflict handling."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Negotiation Fundamentals",
+    "provider": "ESSEC Business School (Coursera)",
+    "url": "https://www.coursera.org/learn/negotiation-fundamentals",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 9,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/negotiation-fundamentals",
+    "notes": "Beginner course on negotiation strategy, preparation, value creation and process management; free to audit."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Power and Negotiation (15.665)",
+    "provider": "MIT OpenCourseWare (MIT Sloan)",
+    "url": "https://ocw.mit.edu/courses/15-665-power-and-negotiation-spring-2014",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ocw.mit.edu/courses/15-665-power-and-negotiation-spring-2014",
+    "notes": "Graduate-level free materials on negotiation theory and practice with simulations, exercises and cases."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Radical Candor: Kim Scott's feedback framework",
+    "provider": "Radical Candor LLC",
+    "url": "https://www.radicalcandor.com/our-approach",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.radicalcandor.com/our-approach",
+    "notes": "Free overview of caring personally while challenging directly, with the four quadrants for giving critical feedback."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "Thanks for the Feedback: The Science and Art of Receiving Feedback Well",
+    "provider": "Penguin Books (Stone, Heen)",
+    "url": "https://www.penguinrandomhouse.com/books/313485/thanks-for-the-feedback-by-douglas-stone-and-sheila-heen",
+    "cost": "paid",
+    "format": "book",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.penguinrandomhouse.com/books/313485/thanks-for-the-feedback-by-douglas-stone-and-sheila-heen",
+    "notes": "Frameworks for responding to criticism with curiosity rather than defensiveness; for experienced professionals."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "difficult-conversations"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Working in groups and teams",
+    "provider": "The Open University (OpenLearn)",
+    "url": "https://www.open.edu/openlearn/money-business/leadership-management/working-groups-and-teams/content-section-overview",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 8,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/money-business/leadership-management/working-groups-and-teams/content-section-overview",
+    "notes": "Free 8-hour OU Level 3 course; includes a section on managing conflict with five conflict-response styles and win-win approaches."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "10 ways to have a better conversation (Celeste Headlee)",
+    "provider": "TED (TEDxCreativeCoast)",
+    "url": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation",
+    "notes": "Practical conversation rules from a radio host: listen more, ask open questions, stay present."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "5 ways to listen better (Julian Treasure)",
+    "provider": "TED",
+    "url": "https://www.ted.com/talks/julian_treasure_5_ways_to_listen_better",
+    "cost": "free",
+    "format": "video",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.ted.com/talks/julian_treasure_5_ways_to_listen_better",
+    "notes": "TEDGlobal 2011 talk introducing conscious listening and the RASA method (receive, appreciate, summarize, ask)."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Active Listening (practice guide)",
+    "provider": "Greater Good Science Center, UC Berkeley",
+    "url": "https://ggia.berkeley.edu/practice/active_listening",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://ggia.berkeley.edu/practice/active_listening",
+    "notes": "Research-backed practice: paraphrasing, clarifying questions, empathy; at least 10 minutes, weekly practice."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Active Listening: Enhancing Communication Skills",
+    "provider": "Coursera (Hector Sandoval)",
+    "url": "https://www.coursera.org/learn/active-listening-enhancing-communication-skills",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 4,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/active-listening-enhancing-communication-skills",
+    "notes": "Beginner course on active listening, empathy, nonverbal cues and rapport; certificate is paid."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Coaching and Mentoring Skills for New Managers",
+    "provider": "LearnKartS (Coursera)",
+    "url": "https://www.coursera.org/learn/coaching-mentoring-skills-new-managers",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 2,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/coaching-mentoring-skills-new-managers",
+    "notes": "Short course on asking better questions, listening deeply and holding coaching conversations as a new manager."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Coaching Conversations",
+    "provider": "University of California, Davis (Coursera)",
+    "url": "https://www.coursera.org/learn/coaching-conversations",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 10,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/coaching-conversations",
+    "notes": "Scenario-based course applying active listening and constructive feedback in manager-led coaching conversations; paid certificate."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "proficient"
+    ],
+    "title": "Empathy and Emotional Intelligence at Work",
+    "provider": "UC Berkeley Greater Good Science Center (edX)",
+    "url": "https://www.edx.org/course/empathy-and-emotional-intelligence-at-work",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.edx.org/course/empathy-and-emotional-intelligence-at-work",
+    "notes": "Research-led course on empathy and emotional intelligence in workplace relationships; free audit, $199 verified certificate per GGSC page."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "emerging",
+      "foundational"
+    ],
+    "title": "Essential Soft Skills: Listening",
+    "provider": "Alison",
+    "url": "https://alison.com/course/essential-soft-skills-listening",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://alison.com/course/essential-soft-skills-listening",
+    "notes": "Beginner video course (1.5-3 hours stated) on active listening, focus and retaining information; paid certificate optional."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "Feeling Heard: Experiences of Listening (or Not) at Work",
+    "provider": "Frontiers in Psychology (Kriz, Kluger, Lyddy)",
+    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.659087/full",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.659087/full",
+    "notes": "Open-access qualitative study of what makes employees feel heard beyond active-listening techniques; research-level reading."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "foundational",
+      "proficient"
+    ],
+    "title": "Mastering Active Listening in the Global Workplace",
+    "provider": "STARWEAVER (Coursera)",
+    "url": "https://www.coursera.org/learn/mastering-active-listening-in-the-global-workplace",
+    "cost": "free_audit",
+    "format": "course",
+    "duration_hours": 4,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.coursera.org/learn/mastering-active-listening-in-the-global-workplace",
+    "notes": "Intermediate course on reflective listening, empathy and adapting listening across cultures; certificate is paid."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "emerging"
+    ],
+    "title": "The importance of interpersonal skills",
+    "provider": "OpenLearn (The Open University)",
+    "url": "https://www.open.edu/openlearn/money-business/leadership-management/the-importance-interpersonal-skills",
+    "cost": "free",
+    "format": "course",
+    "duration_hours": 3,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://www.open.edu/openlearn/money-business/leadership-management/the-importance-interpersonal-skills",
+    "notes": "Short introductory course on interpersonal skills and how good communication shapes working relationships."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "advanced"
+    ],
+    "title": "The Power of Listening at Work (Kluger and Itzchakov)",
+    "provider": "Annual Review of Organizational Psychology and Organizational Behavior (author PDF via Leibniz Psychology)",
+    "url": "https://leibniz-psychology.org/fileadmin/user_upload/pdf/il_Kluger-and-Itzchakov-OPOB-RR.pdf",
+    "cost": "free",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "search",
+    "final_url": "https://leibniz-psychology.org/fileadmin/user_upload/pdf/il_Kluger-and-Itzchakov-OPOB-RR.pdf",
+    "notes": "Academic review of listening outcomes, measurement and moderators at work; author-posted PDF, expert-level."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "The Surprising Power of Questions",
+    "provider": "Harvard Business Review",
+    "url": "https://hbr.org/2018/05/the-surprising-power-of-questions",
+    "cost": "paid",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://hbr.org/2018/05/the-surprising-power-of-questions",
+    "notes": "Brooks and John on question types, follow-up questions and tone; HBR is subscription/metered."
+  },
+  {
+    "skill_slug": "workplace-communication",
+    "subskill_ids": [
+      "listening-questions"
+    ],
+    "levels": [
+      "proficient",
+      "advanced"
+    ],
+    "title": "What Great Listeners Actually Do",
+    "provider": "Harvard Business Review",
+    "url": "https://hbr.org/2016/07/what-great-listeners-actually-do",
+    "cost": "paid",
+    "format": "article",
+    "duration_hours": null,
+    "language": "en",
+    "verification_method": "page",
+    "final_url": "https://hbr.org/2016/07/what-great-listeners-actually-do",
+    "notes": "Zenger and Folkman research on what top listeners do (questions, supportive interaction); HBR is subscription/metered."
+  }
+]

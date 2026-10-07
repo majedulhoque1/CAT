@@ -4,11 +4,14 @@ const TABS = [
   { to: '/admin', label: 'Submissions', end: true },
   { to: '/admin/bookings', label: 'Bookings' },
   { to: '/admin/availability', label: 'Availability' },
+  { to: '/admin/skills', label: 'Skills' },
+  { to: '/admin/courses', label: 'Courses' },
+  { to: '/admin/skill-stats', label: 'Item stats' },
 ]
 
 export default function AdminNav() {
   return (
-    <div style={{ display: 'flex', gap: 'var(--sp-8)', marginBottom: 'var(--sp-24)', borderBottom: '1px solid var(--grey-200)', paddingBottom: 'var(--sp-8)' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--sp-8)', marginBottom: 'var(--sp-24)', borderBottom: '1px solid var(--grey-200)', paddingBottom: 'var(--sp-8)' }}>
       {TABS.map((tab) => (
         <NavLink
           key={tab.to}

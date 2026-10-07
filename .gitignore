@@ -27,3 +27,8 @@ dist-ssr
 # Test/debug artifacts
 .playwright-mcp/
 *.png
+
+# Skill Assessment answer keys. Server-only: they hold every correct answer and rationale.
+# Keep them OUT of a public repo (git history is permanent). Remove this line only after
+# the repository is private. The deployed function gets them from deploy-function.mjs.
+supabase/functions/_shared/skills/*.keys.js

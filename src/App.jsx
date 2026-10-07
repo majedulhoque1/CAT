@@ -9,6 +9,9 @@ const AssessmentApp = lazy(() => import('./AssessmentApp'))
 const PublicReport = lazy(() => import('./pages/PublicReport'))
 const BookingPage = lazy(() => import('./pages/BookingPage'))
 const AdminApp = lazy(() => import('./admin/AdminApp'))
+const SkillsIndex = lazy(() => import('./pages/SkillsIndex'))
+const SkillAssessmentApp = lazy(() => import('./SkillAssessmentApp'))
+const SkillPublicReport = lazy(() => import('./pages/SkillPublicReport'))
 
 function RouteFallback() {
   return (
@@ -43,6 +46,11 @@ export default function App() {
             <Route path="/cat/take" element={<AssessmentApp />} />
             <Route path="/r/:token" element={<PublicReport />} />
             <Route path="/book" element={<BookingPage />} />
+
+            {/* ---- skill assessment ---- */}
+            <Route path="/skills" element={<SkillsIndex />} />
+            <Route path="/skills/:slug" element={<SkillAssessmentApp />} />
+            <Route path="/s/:token" element={<SkillPublicReport />} />
             <Route path="/admin/*" element={<AdminApp />} />
 
             {/* CAT was never deployed publicly, but this path was shared during
